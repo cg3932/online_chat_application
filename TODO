@@ -1,0 +1,3 @@
+o fix get_buddies to return three arrays of buddy names, statuses, online/offlines, confirmation status
+o implement random chat pairing
+o make a function to set confirm

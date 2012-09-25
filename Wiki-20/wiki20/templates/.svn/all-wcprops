@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates
+END
+sidebars.html
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/sidebars.html
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/footer.html
+END
+authentication.html
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/authentication.html
+END
+environ.html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/environ.html
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/__init__.py
+END
+debug.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/debug.html
+END
+index.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/index.html
+END
+header.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/header.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/login.html
+END
+data.html
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/data.html
+END
+error.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/error.html
+END
+about.html
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/about.html
+END
+master.html
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/templates/master.html
+END

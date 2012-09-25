@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/controllers
+END
+error.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/controllers/error.py
+END
+template.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/controllers/template.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/controllers/__init__.py
+END
+root.py
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/controllers/root.py
+END
+controller.template
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/controllers/controller.template
+END
+secure.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/controllers/secure.py
+END

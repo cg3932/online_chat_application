@@ -1,0 +1,8 @@
+To run this project (or any other turbogears project for that matter) is pretty simple. On this server, the port 8000 is open on the router. All turbogears projects on this server should listen on that port. All you need to do to run the project is:
+1) log into the server using the credentials provides
+2) changes to the appropriate directory (/pub/tg)
+3) Activate the virtual environement (virtualenv, for short) by typing the command 'source bin/activate' Your command prompt should change as a result.
+4) Now, change to the abchat directory 'cd abchat'
+5) Finally, server the project using paster 'paster serve development.ini' Some text should show up and at the end it ought to say serving on 0.0.0.0:8000. Now on your browser go to iain.homelinux.com:8000 and voila!
+
+Any errors will display in the console serving on paster, as well as any and all SQLalchemy database transactions.

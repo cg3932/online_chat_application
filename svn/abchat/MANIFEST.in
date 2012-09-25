@@ -1,0 +1,4 @@
+recursive-include abchat/public *
+include abchat/public/favicon.ico
+recursive-include abchat/i18n *
+recursive-include abchat/templates *

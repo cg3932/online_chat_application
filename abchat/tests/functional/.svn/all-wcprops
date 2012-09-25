@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/abchat/!svn/ver/31/abchat/tests/functional
+END
+test_authentication.py
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/abchat/!svn/ver/31/abchat/tests/functional/test_authentication.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/abchat/!svn/ver/31/abchat/tests/functional/__init__.py
+END
+test_root.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/abchat/!svn/ver/31/abchat/tests/functional/test_root.py
+END

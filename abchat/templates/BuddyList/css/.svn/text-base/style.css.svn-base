@@ -1,0 +1,69 @@
+#addBudContainer{
+	display: block;
+}
+#buddyList { 
+min-width: 185px; /*WIDTH OF HIDDEN SLIDE PANEL*/ 
+display: none; /*THE ELEMENT WILL NOT BE DISPLAYED*/ 
+border-right-width: 2px; /*ADDS RIGHT BORDER OF 2PX*/ 
+border-left-width: 2px; /*ADDS LEFT BORDER OF 2PK*/ 
+border-right-style: solid; /*MAKES RIGHT BORDER SOLID*/ 
+border-left-style: solid; /*MAKES LEFT BORDER SOLID*/ 
+border-right-color: #626262; /*RIGHT BORDER COLOR*/ 
+border-left-color: #626262; /*LEFT BORDER COLOR*/ 
+background-color: #949494; /*SLIDE PANEL BACKGROUND COLOR*/ 
+border-bottom-width: 2px; /*ADDS BOTTOM BORDER OF 2PX*/ 
+border-bottom-style: solid; /*MAKES BOTTOM BORDER SOLID*/ 
+border-bottom-color: #626262;
+border-top-width: 2px; /*ADDS BOTTOM BORDER OF 2PX*/ 
+border-top-style: solid; /*MAKES BOTTOM BORDER SOLID*/ 
+border-top-color: #626262; /*BOTTOM BORDER COLOR*/ 
+opacity: .8; /*SETS SLIDE PANEL BACKGROUND'S OPACITY TO 80%*/ 
+margin: auto; /*CENTERS OUR SLIDE PANEL*/ 
+position: fixed;
+bottom: 50px;
+} 
+
+.slide { 
+margin: 0; /*NO MARGIN*/ 
+padding: 0; /*NO PADDING*/ 
+background-image: url(../Images/slide_button.png); /*ADDS OUR BUTTON IMAGE*/ 
+background-repeat: no-repeat; /*STOPS BUTTON FROM REPEATING*/ 
+//background-position: center bottom; /*SETS BUTTON POSITION*/ 
+bottom: 50px;
+left: 175px;
+} 
+
+.btn-slide { 
+text-align: center; /*ALIGNS TEXT CENTER*/ 
+width: 190px; /*BUTTON WIDTH*/ 
+height: 26px; /*BUTTON HEIGHT*/ 
+display: block; /*DISPLAY AS A BLOCK*/ 
+color: #fff; /*TEXT COLOR*/ 
+text-decoration: none; /*REMOVES UNDERSCORE FROM LINK*/ 
+font-family: Arial, Helvetica, sans-serif; /*FONT FAMILY*/ 
+font-weight: bold; /*TURNS TEXT BOLD*/ 
+font-size: 1em; /*FONT SIZE*/ 
+bottom: 50px;
+left: 175px;
+line-height: 32px; /*LINE HEIGHT OF BUTTON TEXT*/ 
+}
+.btn-addBud { 
+width: 25px; /*BUTTON WIDTH*/ 
+height: 20px;
+display: inline-block; /*DISPLAY AS A BLOCK*/
+}
+.addBud {
+background-image: url(../Images/Button-Add-icon.png); /*ADDS OUR BUTTON IMAGE*/ 
+background-repeat: no-repeat; /*STOPS BUTTON FROM REPEATING*/ 
+}
+html, body{
+	height: 100%;
+}
+.wrapper{
+	min-height:100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+
+Read more: http://www.webdesign.org/web-programming/javascript/jquery-sliding-panel.17611.html#ixzz1CTsY0BJr

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/abchat/!svn/ver/93/abchat/templates
+END
+sidebars.html
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/abchat/!svn/ver/31/abchat/templates/sidebars.html
+END
+footer.html
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/abchat/!svn/ver/31/abchat/templates/footer.html
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/abchat/!svn/ver/31/abchat/templates/__init__.py
+END
+root2.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/abchat/!svn/ver/93/abchat/templates/root2.html
+END
+header.html
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/abchat/!svn/ver/31/abchat/templates/header.html
+END
+login.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/abchat/!svn/ver/86/abchat/templates/login.html
+END
+error.html
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/abchat/!svn/ver/31/abchat/templates/error.html
+END
+master.html
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/abchat/!svn/ver/31/abchat/templates/master.html
+END

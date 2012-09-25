@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/tests/models
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/tests/models/__init__.py
+END
+test_auth.py
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/tests/models/test_auth.py
+END

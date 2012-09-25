@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:py="http://genshi.edgewall.org/"
+      xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" py:replace="''" />
+<title>ABCHAT</title>
+
+<link href="${tg.url('/css/login.css')}" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div style="float: none; margin: auto; margin-top: 100px; text-align: center; color: #E0E0E0; font-size: 400%;">
+        <py:with vars="flash=tg.flash_obj.render('flash', use_js=False)">
+            <div py:if="flash" py:content="XML(flash)" />
+        </py:with>
+    </div>
+    <div class="container">
+        <div id="login-box">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <form method="post" action="${tg.url('/login_handler')}" accept-charset="UTF-8">
+            <div id="login-box-name" style="margin-top:20px;">
+                Username:
+            </div>
+            <div id="login-box-field" style="margin-top:20px;">
+                <input type="text" id="loginusername" name="login" class="form-login" value="" size="30" maxlength="2048" />
+            </div>
+            <div id="login-box-name">
+                Password:
+            </div>
+            <div id="login-box-field">
+                <input name="password" type="password" id="loginpassword" class="form-login" title="Password" value="" size="30" maxlength="2048" />
+            </div>
+            <br />
+            <span class="login-box-options">
+                Don't have an account? <a href="register">Sign Up</a> for free, or <a href="guest">Login as a guest</a>.<br />
+            </span>
+            <br />
+            <br />
+            <input type="image" src="${tg.url('/images/login/login-btn.png')}" width="103" height="42" style="margin-left: 90px;" />
+        </form>
+        </div>
+    </div>
+</body>
+</html>

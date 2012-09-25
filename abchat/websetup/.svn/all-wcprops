@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/abchat/!svn/ver/31/abchat/websetup
+END
+bootstrap.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/abchat/!svn/ver/31/abchat/websetup/bootstrap.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/abchat/!svn/ver/31/abchat/websetup/__init__.py
+END
+schema.py
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/abchat/!svn/ver/31/abchat/websetup/schema.py
+END

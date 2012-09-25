@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/abchat/!svn/ver/86/svn/abchat
+END
+setup.py
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/abchat/!svn/ver/86/svn/abchat/setup.py
+END
+MANIFEST.in
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/abchat/!svn/ver/86/svn/abchat/MANIFEST.in
+END
+devdata.db
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/abchat/!svn/ver/86/svn/abchat/devdata.db
+END
+setup.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/abchat/!svn/ver/86/svn/abchat/setup.cfg
+END

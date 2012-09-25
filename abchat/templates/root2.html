@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+        xmlns:py="http://genshi.edgewall.org/">
+  <head>
+    <title>ABCHAT - HOME</title>
+    <link href="${tg.url('/images/favicon.png')}" rel="SHORTCUT ICON" />
+    <!--<link rel="stylesheet" href="${tg.url('/css/background2.css')}" />-->
+    <link rel="stylesheet" href="${tg.url('/css/background3.css')}" />
+    <!-- <script src="${tg.url('/javascript/globalFunctions.js'}"> </script> -->
+	<script type="text/javascript" src="${tg.url('/javascript/Conversation.js')}"> </script>
+	<script type="text/javascript" src="${tg.url('/javascript/ConversationManager.js')}"> </script>
+	<script type="text/javascript" src="${tg.url('/javascript/RandomConversationManager.js')}"> </script>
+	<script type="text/javascript" src="${tg.url('/javascript/ChatRoom.js')}"> </script>
+	<script type="text/javascript" src="${tg.url('/javascript/UserOptions.js')}"> </script>
+    <script type="text/javascript" src="${tg.url('/javascript/BuddyList.js')}"> </script>
+    <script type="text/javascript" src="${tg.url('/javascript/Buddy.js')}"> </script>
+	<script type="text/javascript" src="${tg.url('/javascript/jquery/jquery-1.5.js')}"> </script>
+    <!-- <script type="text/javascript" src="${tg.url('/javascript/conv.js')}"> </script> -->
+    <script type="text/javascript">
+    	$(document).ready(function(){
+		var username = $('#username').val();
+		new UserOptions(username);
+	});
+    </script>
+	</head>
+  <body>
+  <div class="container">
+    <py:if test="defined('username')">
+        <py:for each="user in username">
+            <input type="hidden" id="username" value="$user" />
+        </py:for>
+    </py:if>
+	<!-- HEADER REGION --> 
+	<div class="header">
+		<div class="headerCenterRegion">
+			<a href="/">
+                <div class="headerLogo"> </div>
+                <div class="headerText">ABCHAT</div>
+                <div class="sloganText">CHAT. COMMUNICATE. COLLABORATE.</div>
+            </a>
+		</div>
+	</div>
+	
+	<div class="pageIndicator">
+		<div class="pageIndicatorCenterRegion">
+			<div class="navigation">
+				<ul>
+					<li> <a href="index.html"> <div class="currentPage">HOME</div> </a> </li>
+					<!-- <li> <a href="http://iain.homelinux.com:8000/logout_handler">LOGOUT</a> </li> -->
+					<li> <a href="http://iain.homelinux.com:8000/logout">LOGOUT</a> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="pageIndicatorConversations">
+		<div class="pageIndicatorCenterRegion">
+			<div class="conversation">
+				<ul id="TabBar">
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="topContentSpacer"> </div>
+	
+	<!-- CENTER REGION-->
+	<div class="contentRegion" id="buddy">
+        <div class="contentRegionTop">
+            <div class="contentRegionTopLeft"> </div>
+            <div class="contentRegionTopMiddle"> </div>
+            <div class="contentRegionTopRight"> </div>
+        </div>
+	    <div class="contentCenterRegionMain">
+            <div class="contentCenterRegionMainLeft">
+	      
+
+                  <div class="contentCenterRegionMainRight">
+		  
+		  <!--DIV FOR USER OPTIONS-->
+            	      <div class="contentCenter" id="contentCenterUser">
+
+            	        </div>
+		      
+		      <!--DIV FOR CHATROOM OPTIONS-->
+			<div class="contentCenter" id="contentCenter">
+			  <h3>Join A Chatroom</h3>
+			  <div class="horizontalRule"> </div>
+			  <form id="searchthis" onsubmit="manager.joinChatRoom(this['status-box'].value); return false;" style="display:inline;">
+			  <input id="status-box" name="q" style="height:25px;" onfocus="if(this.value == 'Enter Chatroom Name'){this.value = '';}" type="text" onblur="if(this.value == ''){this.value='Enter Chatroom Name';}" class="input" value="Enter Chatroom Name"> </input>
+			   </form>
+			  <br/>
+			  <!--<div onclick="randomChat.startRandomChat()"> <div class="randChatImg"> </div> <div class="addUserTxt">Random Chat </div> </div>-->
+			  <div class="contentSpacerLarge"> </div>
+            	        </div>
+			
+			
+                        <div class="contentSpacerLarge"> </div>
+                        <div class="contentSpacerSmall"> </div>
+                    </div>
+		
+
+                </div>
+            </div>
+            <div class="contentRegionBottom">
+            <div class="contentRegionBottomLeft"> </div>
+            <div class="contentRegionBottomMiddle"> </div>
+            <div class="contentRegionBottomRight"> </div>
+        </div>
+	      
+        <div class="backToTopContainer"> </div>
+    </div>
+		
+	<div class="contentRegion" id="chat" style="display:none">
+        <div class="contentRegionTop">
+            <div class="contentRegionTopLeft"> </div>
+            <div class="contentRegionTopMiddle"> </div>
+            <div class="contentRegionTopRight"> </div>
+        </div>
+	    <div class="contentCenterRegionMain">
+            <div class="contentCenterRegionMainLeft">
+                <div class="contentCenterRegionMainRight">
+                    <div class="contentCenter">
+		
+	            	<h3 id="ConvHeader">Conversation with (Username)!</h3>
+            		<div class="horizontalRule"> </div>
+            		<br/>
+		
+            		<div class="userChatContainer">
+                        <div class="userIcon"> </div>
+                            <div class="userOptions">
+			                    <div class="conversationWindow" id = "userChatBody" name="inputtext"> </div>
+		                    </div>
+                        </div>
+
+		                <div class="chatroomadmin" id="chatroomadmin" style="display: none;">
+                            <textarea class="adminuser" id="adminuser" name="adminuser">USERNAME</textarea>
+                            <br />
+                            <div class="mute" onclick="manager.mute()">MUTE</div>
+                            <div class="kick" onclick="manager.kick()">KICK </div>
+                            <div class="ban" onclick="manager.ban()">BAN</div>
+                            <br />
+                            <br />
+                            <div class="unmute" onclick="manager.unmute()">UNMUTE</div>
+                            <div class="setadmin" onclick="manager.setadmin()">SET ADMIN</div>
+                            <div class="unban" onclick="manager.unban()">UNBAN</div>
+                        </div>
+
+		                <div class="userMsgContainer">
+                            <div class="userIcon"> </div>
+                            <div class="userOptions">
+                                <textarea class="conversationWindowUserMsg" id = "userMsgBody" name="msgtext"> </textarea>
+					            <div class="sendButton" onclick="manager.sendMessage()"> </div>
+		                    </div>
+
+                        </div>
+
+                		<!-- END OF CONTENT AREA -->
+		
+                    </div>
+                    <div class="contentSpacerLarge"> </div>
+                    <div class="contentSpacerSmall"> </div>
+                </div>
+            </div>
+        </div>
+	    <div class="contentRegionBottom">
+            <div class="contentRegionBottomLeft"> </div>
+            <div class="contentRegionBottomMiddle"> </div>
+            <div class="contentRegionBottomRight"> </div>
+        </div>
+	    <div class="backToTopContainer"> </div>
+    </div>
+		  
+		<!--<script type="text/javascript"> -->
+		<!--var usrname = $('#username').val();-->
+		<!--manager = new ConversationManager(usrname,"userChatBody","userMsgBody",-->
+		<!--function(targetName, isChatRoom) {-->
+		<!--	var tabBar = document.getElementById('TabBar');-->
+		<!--	var newTab = document.createElement('li');-->
+		<!--	var newDiv = document.createElement('a');-->
+		<!--	var xButton = document.createElement('div');-->
+		<!--	-->
+		<!--	newTab.appendChild(newDiv);-->
+		<!--	newTab.appendChild(xButton);-->
+		<!--	-->
+		<!--	newDiv.innerHTML = targetName;-->
+		<!--	tabBar.insertBefore(newTab, tabBar.firstChild);-->
+		<!--	xButton.className = "closeTabButton";-->
+		<!--	xButton.onclick = function() { manager.deleteConversation(targetName, isChatRoom); document.getElementById("TabBar").removeChild(newTab);};-->
+		<!--	newTab.onclick = function() { manager.activateConversation(targetName, isChatRoom); };-->
+		<!--},-->
+		<!--function(targetName, isChatRoom) {-->
+		<!--	document.getElementById("buddy").style.display = '';-->
+		<!--	document.getElementById("chat").style.display = 'none';-->
+		<!--},-->
+		<!--function(targetName, isChatRoom) {-->
+		<!--	document.getElementById("buddy").style.display = 'none';-->
+		<!--	document.getElementById("chat").style.display = '';-->
+		<!--	if (isChatRoom) document.getElementById('ConvHeader').innerHTML = "Chat Room: " + targetName;-->
+		<!--	else document.getElementById('ConvHeader').innerHTML = "Conversation with " + targetName;-->
+		<!--}-->
+		<!--);-->
+		<!--randomChat = new RandomConversationManager(usrname,manager);-->
+		<!--</script>-->
+		  
+	<!-- FOOTER REGION -->
+	<div class="footer"> <div class="footerContent"> <p>&copy; ABCHAT 2011. Designed By Team ABC.</p> </div> </div>
+</div>
+</body>
+</html>

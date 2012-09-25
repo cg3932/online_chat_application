@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/config
+END
+middleware.py
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/config/middleware.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/config/__init__.py
+END
+app_cfg.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/config/app_cfg.py
+END
+deployment.ini_tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/config/deployment.ini_tmpl
+END
+environment.py
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/abchat/!svn/ver/32/Wiki-20/wiki20/config/environment.py
+END

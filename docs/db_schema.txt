@@ -1,0 +1,83 @@
+ABCHAT DATABASE SCHEMA
+----------------------
+
+Table Users
+-----------
+id unsigned int unique primary key
+username varchar(40) unique
+password password(40)
+status varchar(255)
+isguest bool
+loggedin bool
+
+Table Buddies
+-------------
+id unsigned int unique primary key
+user_initiated unsigned int foreign key (Users.id)
+user_target unsigned int foreign key (Users.id)
+istmp bool
+blocked bool
+accepted bool
+
+
+Table Messages
+--------------
+id unsigned int unique primary key
+to unsigned int foreign key (Users.id)
+from unsigned int foreign key (Users.id)
+time datetime
+message varchar(1024)
+
+Table Chatroom
+--------------
+id unsigned int unique primary key
+name varchar(64)
+admin unsigned int foreign key (Users.id)
+topic varchar(1024)
+
+Table Chatroom_messages
+-----------------------
+id unsigned int unique primary key
+chatroom unsigned int foreign key (Chatroom.id)
+from unsigned int foreign key (Users.id)
+time datetime
+message varchar(1024)
+
+Table Chatroom_bans
+-------------------
+id unsigned int unique primary key
+chatroom unsigned int foreign key (Chatroom.id)
+user unsigned int foreign key (Users.id)
+expires datetime
+
+Table Chatroom_members
+----------------------
+id unsigned int unique primary key
+chatroom unsigned int foreign key (Chatroom.id)
+user unsigned int foreign key (Users.id)
+
+Table Files
+-----------
+id unsigned int unique primary key
+msg unsigned int foreign key (Messages.id)
+path varchar(4096)
+
+Table Permissions
+-----------------
+id unsigned int unique primary key
+name varchar(32) not null
+
+Table UGroup
+------------
+id unsigned int unique primary key
+groupname varchar(32) not null
+
+Table Group_Perm
+----------------
+group_id unsigned int foreign key (UGroup.id) primary key
+perm_id unsigned int foreign key (Permissions.id) primary key
+
+Table User_Group
+----------------
+user_id unsigned int foreign key (Users.id) primary key
+group_id unsigned int foreign key (UGroup.id) primary key

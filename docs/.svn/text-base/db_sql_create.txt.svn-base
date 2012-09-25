@@ -1,0 +1,80 @@
+ABCHAT DATABASE CREATION SQL SYNTAX
+-----------------------------------
+
+create table Users (
+id integer unsigned not null auto_increment unique,
+username varchar(40) not null unique,
+password varchar(512) not null,
+status varchar(255),
+isguest smallint default 0,
+primary key (id));
+
+
+create table Buddies (
+id integer unsigned not null auto_increment unique,
+user_initiated integer unsigned not null,
+user_target integer unsigned not null,
+istmp smallint default 0,
+blocked smallint default 0,
+accepted smallint default 0,
+primary key (id),
+foreign key (user_initiated) references User(id),
+foreign key (user_target) references User(id));
+
+
+create table Messages (
+id integer unsigned not null auto_increment unique,
+uto integer unsigned not null,
+ufrom integer unsigned not null,
+time datetime not null,
+message varchar(1024) not null,
+primary key (id),
+foreign key (uto) references User(id),
+foreign key (ufrom) references User(id));
+
+
+create table Chatroom (
+id integer unsigned not null auto_increment unique,
+name varchar(64) not null,
+admin integer unsigned not null,
+topic varchar(1024),
+primary key(id),
+foreign key (admin) references User(id));
+
+
+create table Chatroom_messages (
+id integer unsigned not null auto_increment unique,
+chatroom integer unsigned not null,
+ufrom integer unsigned not null,
+time datetime not null,
+message varchar(1024) not null,
+primary key (id),
+foreign key (chatroom) references Chatroom(id),
+foreign key (ufrom) references User(id));
+
+
+create table Chatroom_bans (
+id integer unsigned not null auto_increment unique,
+chatroom integer unsigned not null,
+user integer unsigned not null,
+expires datetime,
+primary key (id),
+foreign key (chatroom) references Chatroom(id),
+foreign key (user) references User(id));
+
+
+create table Chatroom_members (
+id integer unsigned not null auto_increment unique,
+chatroom integer unsigned not null,
+user integer unsigned not null,
+primary key (id),
+foreign key (chatroom) references Chatroom(id),
+foreign key (user) references User(id));
+
+
+create table Files (
+id integer unsigned not null auto_increment unique,
+msg integer unsigned not null,
+path varchar(4096) not null,
+primary key (id),
+foreign key (msg) references Messages(id));

@@ -1,0 +1,89 @@
+10
+
+dir
+95
+http://subversion.assembla.com/svn/abchat/Wiki-20/wiki20
+http://subversion.assembla.com/svn/abchat
+
+
+
+2011-02-09T19:57:37.834484Z
+32
+julian.cooper
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2ecf2010-41d4-4b8f-af5f-ff22edf81711
+
+i18n
+dir
+
+model
+dir
+
+tests
+dir
+
+config
+dir
+
+controllers
+dir
+
+lib
+dir
+
+__init__.py
+file
+
+
+
+
+2011-06-22T01:26:25.564941Z
+cce528607897ad42cc6fb92d169eb2e5
+2011-02-09T19:57:37.834484Z
+32
+julian.cooper
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+50
+
+public
+dir
+
+templates
+dir
+
+websetup
+dir
+
